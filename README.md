@@ -44,16 +44,74 @@ Let us understand from the below example.
 - ##### routing_prob1.py
   - **Problem Statement**<br />
 
+- ##### routing/pickup-capacity.py
+  Here's the solution for the pickup with capacity constraint for 4 delivery trucks from google developers website.
+
+  - **Poblem Statement**<br />
+    The senario is to find out the path travelled between these given nodes by the 4 delivery truck to pickup the load at each node with capacity contraint of 15.<br />
+  - **Given** <br />
+    `data['demands'] = [0, 1, 1, 2, 4, 2, 4, 8, 8, 1, 2, 1, 2, 4, 4, 8, 8]
+    data['vehicle_capacities'] = [15, 15, 15, 15]` <br />
+
+  - ##### Execution
+    `python pickup-capacity.py`
+
+- ##### routing/pickup-delivery.py 
+  Here's the solution for the pickup delivery from google developers website.
+
+  - **Poblem Statement**<br />
+    The senario is to find out the initial solution from the routes and then performs a search starting at the initial solution. The program displays both the initial solution, and the solution found by the search<br />
+  - **Given** <br />
+    '  data['initial_routes'] = [
+        [8, 16, 14, 13, 12, 11],
+        [3, 4, 9, 10],
+        [15, 1],
+        [7, 5, 2, 6],
+    ]' <br />
+
+  - ##### Execution
+    `python routing.py`
+
+
 ## 3.Scheduling Solver
 Here we are trying to solve shift scheduling using the Google OR-Tools scheduling model.
 Let us understand from the below example.
 
 - ##### scheduling.py
   Here's the solution for the shift scheduling of the four nurses over a three-day period, subject to the following conditions:<br />
-
+  - **Poblem Statement**<br />
     - Each day is divided into three 8-hour shifts.
     - Every day, each shift is assigned to a single nurse, and no nurse works more than one shift.
     - Each nurse is assigned to at least two shifts during the three-day period.
+  
+  - ##### Execution
+    `python scheduling.py`
+
+## 4. Pickup Routing Solver
+Here we are trying to solve capacitated vehicle routing problem (CVRP) is a VRP in which vehicles with limited carrying capacity need to pick up or deliver items at various locations..
+Let us understand from the below example.
+
+- ##### pickup/pickup-capacity.py
+  Here's the solution for the capacitated vehicle routing problem based on the demand and vechilce capacity:<br />
+  - **Given** <br />
+    - Demands: Each location has a demand corresponding to the quantity—for example, weight or volume—of the item to be picked up.
+    - Capacities: Each vehicle has a capacity: the maximum quantity that the vehicle can hold. As a vehicle travels along its route, the total quantity of the items   it is carrying can never exceed its capacity.
+
+  - ##### Execution
+    `python pickup-capacity.py`
+
+- ##### pickup/pickup-delivery.py
+  Here's the solution for the VRP in which each vehicle picks up items at various locations and drops them off at others.<br />
+  - **Given** <br />
+    - pickup location
+    - deliverable load capicity 
+
+  - ##### Execution
+    `python pickup-delivery.py`
+
+
+
+
 
 
 
